@@ -10,6 +10,8 @@ public interface ICategoryService {
 	public ResponseEntity<CategoryResponseRest> search();
 	public ResponseEntity<CategoryResponseRest> searchById(Long id);
 	public ResponseEntity<CategoryResponseRest> save(category category);
+	public ResponseEntity<CategoryResponseRest> update(category category, Long id);
+	
 	
 
 }
