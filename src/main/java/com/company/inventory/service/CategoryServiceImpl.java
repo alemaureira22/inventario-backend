@@ -35,7 +35,7 @@ public class CategoryServiceImpl implements ICategoryService{
 			response.setMetadata("Respuesta ok","00","Respuesta exitosa");
 			
 		} catch (Exception e) {
-			response.setMetadata("Respuesta ok","00","Respuesta exitosa");
+			response.setMetadata("Respuesta nok","-1","Error al consultar");
 			e.getStackTrace();
 			return new ResponseEntity<CategoryResponseRest>(response,HttpStatus.INTERNAL_SERVER_ERROR);
 			
@@ -148,7 +148,7 @@ public class CategoryServiceImpl implements ICategoryService{
 		
 		try {
 
-              categoryDao.deleteById(id);
+            categoryDao.deleteById(id);
 			response.setMetadata("Respuesta ok","00","Registro eliminado");
 			
 		} catch (Exception e) {

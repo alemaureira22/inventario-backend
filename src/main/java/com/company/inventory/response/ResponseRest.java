@@ -15,9 +15,9 @@ public class ResponseRest {
 		
 		HashMap<String, String> map = new HashMap<String, String>();
 		
-		map.put(type, type);
-		map.put(code, code);
-		map.put(date, date);
+		map.put("type", type);
+		map.put("code", code);
+		map.put("date", date);
 		
 		metadata.add(map);
 	}
